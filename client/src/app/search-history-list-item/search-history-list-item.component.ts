@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-search-history-list-item',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-history-list-item.component.css']
 })
 export class SearchHistoryListItemComponent implements OnInit {
-
+  @Input() term: string;
   constructor() { }
 
   ngOnInit() {

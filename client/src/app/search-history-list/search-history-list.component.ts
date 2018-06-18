@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-search-history-list',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-history-list.component.css']
 })
 export class SearchHistoryListComponent implements OnInit {
-
+  @Input() history: string[];
   constructor() { }
 
   ngOnInit() {

@@ -1,6 +1,6 @@
 import { Movie } from './movie';
 
-const posterBaseURL = 'http://image.tmdb.org/t/p/w185/';
+const posterBaseURL = 'http://image.tmdb.org/t/p/w185';
 const mapObjectsToMovies = function(objs): Movie[] {
   let results: Movie[] = [];
 

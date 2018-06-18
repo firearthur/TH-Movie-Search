@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./history-page.component.css']
 })
 export class HistoryPageComponent implements OnInit {
-
+  searchHistory = ['300', 'LOTR', 'Hobbit'];
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+
+// TODO: load the History from an http and use subscribe
+
