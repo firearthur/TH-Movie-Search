@@ -14,9 +14,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // app.use('/', httpsRedirect());
-// Todo: look into cors and duplicates in db
-// Todo: sockets 
+// TODO: look into cors and duplicates in db
+// TODO: sockets
 // TODO: wildcard
+// TODO: put schema in its own file
 app.use(express.static(path.join(__dirname, '/../public/')));
 
 app.use('/api', router);
