@@ -1,16 +1,7 @@
-const mongoose = require('mongoose');
-
-mongoose.connect('mongodb://localhost/moviesDB');
-
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', () => {
-  // we're connected!
-  console.log('we\'re connected! to mongo db');
-});
+const mongoose = require('./../../db/');
 
 const SearchSchema = mongoose.Schema({
-  
+
   term: String,
 });
 
@@ -25,24 +16,6 @@ const saveSearch = (searchTerm, cb) => {
   });
 };
 
-// const saveSearch = (searchTerm, cb) => {
-//   SearchModel.insertMany({ term: searchTerm }, (err, data) => {
-//     if (err) {
-//       cb(err, null);
-//     }
-//     cb(null, data);
-//   });
-// };
-
-
-SearchModel.remove({}, (err, success) => { // dropping the database
-  if (err) {
-    console.log(err);
-  } else {
-    console.log('Database dropped');
-  }
-});
-
 const getSearches = (cb) => {
   SearchModel.find({}, (err, searches) => {
     if (err) {
@@ -54,3 +27,22 @@ const getSearches = (cb) => {
 
 module.exports.getSearches = getSearches;
 module.exports.saveSearch = saveSearch;
+
+
+// const saveSearch = (searchTerm, cb) => {
+//   SearchModel.insertMany({ term: searchTerm }, (err, data) => {
+//     if (err) {
+//       cb(err, null);
+//     }
+//     cb(null, data);
+//   });
+// };
+
+
+// SearchModel.remove({}, (err, success) => { // dropping the database
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log('Database dropped');
+//   }
+// });
