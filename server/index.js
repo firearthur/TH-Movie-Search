@@ -14,10 +14,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // app.use('/', httpsRedirect());
+// Todo: look into cors and duplicates in db
+// Todo: sockets 
+// TODO: wildcard
+app.use(express.static(path.join(__dirname, '/../public/')));
 
-// app.use(express.static(path.join(__dirname, '/../client/dist')));
-
-app.use('/app', router);
+app.use('/api', router);
 
 
 app.listen(port, () => {
