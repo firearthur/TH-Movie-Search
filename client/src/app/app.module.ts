@@ -10,6 +10,8 @@ import { SearchHistoryListComponent } from './search-history-list/search-history
 import { SearchHistoryListItemComponent } from './search-history-list-item/search-history-list-item.component';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { SearchInputComponent } from './search-input/search-input.component';
+import { SearchListComponent } from './search-list/search-list.component';
+import { SearchListItemComponent } from './search-list-item/search-list-item.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { SearchInputComponent } from './search-input/search-input.component';
     SearchHistoryListComponent,
     SearchHistoryListItemComponent,
     SearchPageComponent,
-    SearchInputComponent
+    SearchInputComponent,
+    SearchListComponent,
+    SearchListItemComponent
   ],
   imports: [
     BrowserModule,
