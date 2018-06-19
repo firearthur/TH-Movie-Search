@@ -9,6 +9,7 @@ import { HistoryPageComponent } from './history-page/history-page.component';
 import { SearchHistoryListComponent } from './search-history-list/search-history-list.component';
 import { SearchHistoryListItemComponent } from './search-history-list-item/search-history-list-item.component';
 import { SearchPageComponent } from './search-page/search-page.component';
+import { SearchInputComponent } from './search-input/search-input.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SearchPageComponent } from './search-page/search-page.component';
     HistoryPageComponent,
     SearchHistoryListComponent,
     SearchHistoryListItemComponent,
-    SearchPageComponent
+    SearchPageComponent,
+    SearchInputComponent
   ],
   imports: [
     BrowserModule,
