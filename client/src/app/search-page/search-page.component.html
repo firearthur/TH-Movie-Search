@@ -1,2 +1,3 @@
-<app-search-input [getMovies]="getMovies.bind(this)"></app-search-input>
+<app-search-input [showSpinner]="showSpinner.bind(this)" [getMovies]="getMovies.bind(this)"></app-search-input>
+<app-spinner *ngIf="spinning"></app-spinner>
 <app-search-list [searched]="searched" [movies]="movies"></app-search-list>

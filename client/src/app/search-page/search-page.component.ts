@@ -9,15 +9,22 @@ import { MoviesService } from '../movies.service';
 export class SearchPageComponent implements OnInit {
   searched = false;
   movies: any[];
+  spinning = false;
   constructor(private moviesService: MoviesService) { }
 
   getMovies(searchTerm): void {
     this.moviesService.getMovies(searchTerm)
       .subscribe(movies => {
         this.searched = true;
+        this.spinning = false;
         this.movies = movies['results'];
       });
   }
+
+  showSpinner() {
+    this.spinning = true;
+  }
+
   ngOnInit() {
   }
 

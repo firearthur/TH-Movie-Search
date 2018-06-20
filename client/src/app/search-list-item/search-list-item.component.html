@@ -1,6 +1,6 @@
 <div>
-  <h4>{{movie.title}}</h4>
-  <p>Vote Average: {{movie.vote_average}}</p>
   <img src="http://image.tmdb.org/t/p/w185/{{movie.poster_path}}" alt="">
+  <h4>{{movie.title}} {{movie.release_date.slice(0, 4)}}</h4>
+  <p>Vote Average: {{movie.vote_average}}</p>
   <p>Overview: {{movie.overview}}</p>
 </div>
