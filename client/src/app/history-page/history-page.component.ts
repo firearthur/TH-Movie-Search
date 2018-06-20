@@ -24,6 +24,3 @@ export class HistoryPageComponent implements OnInit {
   }
 
 }
-
-// TODO: load the History from an http and use subscribe
-

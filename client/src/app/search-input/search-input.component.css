@@ -1,0 +1,25 @@
+input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-family: 'aqua', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border-bottom: 2px solid #1f1d1d;
+  margin: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+}
+
+input:focus{
+  /* border-color: #eee;  */
+  outline-color: #333;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #1f1d1d;
+  font-family: 'aqua', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  opacity: 0.6;
+ 
+}

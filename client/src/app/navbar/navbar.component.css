@@ -1,0 +1,20 @@
+nav {
+  background-color: #eee;
+}
+a {
+  /* background-color: #262626; */
+  color: #1f1d1d;
+  padding: 5px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 20px 20px;
+}
+
+.selected {
+  padding: 20px 20px;
+  background-color: #1f1d1d;
+  color: #eee;
+  -webkit-transition: color 1s linear; /* Safari */
+  transition: color 1s linear;  
+}

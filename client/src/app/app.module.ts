@@ -13,6 +13,7 @@ import { SearchInputComponent } from './search-input/search-input.component';
 import { SearchListComponent } from './search-list/search-list.component';
 import { SearchListItemComponent } from './search-list-item/search-list-item.component';
 import { FormsModule } from '@angular/forms';
+import { SpinnerComponent } from './spinner/spinner.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     SearchPageComponent,
     SearchInputComponent,
     SearchListComponent,
-    SearchListItemComponent
+    SearchListItemComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,

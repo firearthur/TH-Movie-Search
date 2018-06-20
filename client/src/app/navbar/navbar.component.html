@@ -1,4 +1,4 @@
 <nav>
-  <a routerLink="/search">Search</a>
-  <a routerLink="/history">History</a>
+  <a [ngClass]="{'selected': searchSelected }" routerLink="/search">Search</a>
+  <a [ngClass]="{'selected': historySelected}" routerLink="/history">History</a>
 </nav>
