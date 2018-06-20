@@ -1,0 +1,8 @@
+<div *ngIf="history && history.length; else noResults">
+  <ul>
+    <li *ngFor="let term of history">
+      <app-search-history-list-item [term]="term"></app-search-history-list-item>
+    </li>
+  </ul>
+</div>
+<ng-template #noResults>No search history results :(</ng-template>

@@ -6,7 +6,6 @@ module.exports.searchForMovie = (req, res) => {
   searchMovieAPI(searchTerm, (movies) => {
     // save search to db
     saveSearch(searchTerm, (err, savedSearch) => {
-      console.log('here is the saved search ===>', savedSearch);
       // send the results to client
       console.log(err);
       if (err) {
