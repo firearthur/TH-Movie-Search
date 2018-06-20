@@ -1,6 +1,8 @@
-<p>inside the search list</p>
-<ul>
-  <li>
-    <app-search-list-item></app-search-list-item>
+<ul *ngIf="movies && movies.length">
+  <li *ngFor="let movie of movies">
+    <app-search-list-item [movie]="movie"></app-search-list-item>
   </li>
 </ul>
+<p *ngIf="searched && (!movies || !movies.length)">No search results :(</p>
+
+

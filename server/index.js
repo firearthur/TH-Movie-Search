@@ -9,7 +9,7 @@ const { router } = require('./src/router');
 const port = process.env.PORT || 3300;
 const app = express();
 
-app.use(logger('short'));
+app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 

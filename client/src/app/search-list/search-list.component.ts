@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-search-list',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-list.component.css']
 })
 export class SearchListComponent implements OnInit {
-
+  @Input() searched: boolean;
+  @Input() movies: Object[];
   constructor() { }
 
   ngOnInit() {
+    console.log(this.searched);
   }
 
 }
