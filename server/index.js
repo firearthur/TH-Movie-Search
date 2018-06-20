@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, '../client/dist/client')));
 
-app.use(favicon(path.join(__dirname, '../client/dist/client', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, '../client/dist/client/favicon.ico')));
 
 app.use('/api', router);
 
