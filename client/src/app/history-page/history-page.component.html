@@ -1,2 +1,3 @@
 <h3>Search History:</h3>
-<app-search-history-list [history] = "searchHistory"></app-search-history-list>  
+<app-spinner *ngIf="spinning"></app-spinner>
+<app-search-history-list [history] = "searchHistory"></app-search-history-list>
