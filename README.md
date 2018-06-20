@@ -19,3 +19,4 @@ TODO:
 * enable production mode in angular
 * deploy
 * take care of env vars
+

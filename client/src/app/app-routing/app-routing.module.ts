@@ -4,9 +4,9 @@ import { HistoryPageComponent } from './../history-page/history-page.component';
 import { SearchPageComponent } from '../search-page/search-page.component';
 
 const routes: Routes = [
-  // { path: '', redirectTo: '/SearchPage', pathMatch: 'full' },
-  {path: 'search', component: SearchPageComponent},
-  {path: 'history', component: HistoryPageComponent}
+  { path: '', redirectTo: '/search', pathMatch: 'full' },
+  { path: 'search', component: SearchPageComponent },
+  { path: 'history', component: HistoryPageComponent }
 ];
 
 @NgModule({

@@ -18,9 +18,10 @@ const searchMovieAPI = (searchTerm, cb) => {
     });
 
     res.on('end', () => {
-      const body = Buffer.concat(chunks);
-      // got the movie data in body
-      cb(body);
+      let data = Buffer.concat(chunks);
+      // got the movie data from api in data var
+      data = JSON.parse(data);
+      cb(data.results);
     });
   });
 

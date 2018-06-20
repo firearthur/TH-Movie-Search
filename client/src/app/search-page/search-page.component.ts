@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MoviesService } from '../movies.service';
+import { Movie } from '../classes/movie';
 
 @Component({
   selector: 'app-search-page',
@@ -8,7 +9,7 @@ import { MoviesService } from '../movies.service';
 })
 export class SearchPageComponent implements OnInit {
   searched = false;
-  movies: any[];
+  movies: Movie[];
   spinning = false;
   constructor(private moviesService: MoviesService) { }
 
@@ -17,7 +18,7 @@ export class SearchPageComponent implements OnInit {
       .subscribe(movies => {
         this.searched = true;
         this.spinning = false;
-        this.movies = movies['results'];
+        this.movies = movies;
       });
   }
 

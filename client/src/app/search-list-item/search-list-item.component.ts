@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Movie } from '../classes/movie';
 
 @Component({
   selector: 'app-search-list-item',
@@ -6,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./search-list-item.component.css']
 })
 export class SearchListItemComponent implements OnInit {
-  @Input() movie: Object;
+  @Input() movie: Movie;
   constructor() { }
 
   ngOnInit() {

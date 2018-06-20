@@ -1,17 +1,17 @@
 export class Movie {
   id: string;
   title: string;
-  posterURL: string;
+  posterPath: string;
   voteAverage: number;
   overview: string;
-  releaseDate: Date;
+  releaseYear: string;
 
-  constructor(id, title, posterURL, voteAverage, overview, releaseDate){
+  constructor(id, title, posterPath, voteAverage, overview, releaseYear) {
     this.id = id;
     this.title = title;
-    this.posterURL = posterURL;
+    this.posterPath = posterPath;
     this.voteAverage = voteAverage;
     this.overview = overview;
-    this.releaseDate = releaseDate;
+    this.releaseYear = releaseYear;
   }
 }
