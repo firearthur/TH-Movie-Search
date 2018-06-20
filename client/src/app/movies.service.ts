@@ -4,10 +4,10 @@ import { Observable } from 'rxjs';
 import { Movie } from './classes/movie';
 
 // dev
-const REST_SERVER_URL = 'http://localhost:3300/api/';
+// const REST_SERVER_URL = 'http://localhost:3300/api/';
 
 // production
-// const REST_SERVER_URL = 'https://th-movie-search.herokuapp.com/api/';
+const REST_SERVER_URL = 'https://th-movie-search.herokuapp.com/api/';
 
 
 @Injectable({
