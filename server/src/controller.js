@@ -7,8 +7,8 @@ module.exports.searchForMovie = (req, res) => {
     // save search to db
     saveSearch(searchTerm, (err, savedSearch) => {
       // send the results to client
-      console.log(err);
-      if (err) {
+      // ignore if the error is about duplicates
+      if (err.code !== 11000) {
         res.send(err);
       } else {
         res.send(movies);

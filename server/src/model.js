@@ -1,11 +1,4 @@
-const mongoose = require('./../../db/');
-
-const SearchSchema = mongoose.Schema({
-
-  term: String,
-});
-
-const SearchModel = mongoose.model('SearchModel', SearchSchema);
+const SearchModel = require('./../../db/schema');
 
 const saveSearch = (searchTerm, cb) => {
   new SearchModel({ term: searchTerm }).save((err, data) => {
@@ -28,17 +21,7 @@ const getSearches = (cb) => {
 module.exports.getSearches = getSearches;
 module.exports.saveSearch = saveSearch;
 
-
-// const saveSearch = (searchTerm, cb) => {
-//   SearchModel.insertMany({ term: searchTerm }, (err, data) => {
-//     if (err) {
-//       cb(err, null);
-//     }
-//     cb(null, data);
-//   });
-// };
-
-
+// in case of wanting to clear the db
 // SearchModel.remove({}, (err, success) => { // dropping the database
 //   if (err) {
 //     console.log(err);
