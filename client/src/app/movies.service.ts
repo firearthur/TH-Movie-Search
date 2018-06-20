@@ -3,7 +3,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Movie } from './classes/movie';
 
-const REST_SERVER_URL = 'http://localhost:3300/api/';
+// const REST_SERVER_URL = 'http://localhost:3300/api/';
+const REST_SERVER_URL = 'https://th-movie-search.herokuapp.com/api';
 
 @Injectable({
   providedIn: 'root'
