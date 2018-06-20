@@ -11,11 +11,6 @@ export class HistoryPageComponent implements OnInit {
   constructor(private historyService: HistoryService) { }
   getHistory(): void {
     this.historyService.getHistory()
-      // .subscribe(
-      //   searchHistory => {
-      //     console.log('i got this from server', searchHistory);
-      //   }
-      // );
       .subscribe(
         searchHistory => this.searchHistory = searchHistory
           .map((obj) => {
