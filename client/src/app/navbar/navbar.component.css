@@ -18,10 +18,14 @@ nav a:hover {
 }
 
 @media screen and (min-width: 768px){
-  nav{
+  nav {
     display: flex;
     justify-content: center;
   } 
+
+  nav a {
+    margin: 0 10px;
+  }
 } 
 
 .selected {
