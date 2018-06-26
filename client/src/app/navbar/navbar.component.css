@@ -25,6 +25,8 @@ nav a:hover {
 
   nav a {
     margin: 0 10px;
+    -webkit-transition: color 1s linear; /* Safari */
+    -webkit-transition: background-color 1s linear; 
     transition: color 1s linear;
     transition: background-color 1s linear; 
   }
@@ -34,6 +36,8 @@ nav a:hover {
   padding: 20px 20px;
   background-color: #1f1d1d;
   color: #eee;
+  -webkit-transition: color 1s linear; /* Safari */
+  -webkit-transition: background-color 1s linear;
   transition: color 1s linear;
   transition: background-color 0.5s ease;  
 }
