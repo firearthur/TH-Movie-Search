@@ -5,10 +5,14 @@ const httpsRedirect = require('express-https-redirect');
 const logger = require('morgan');
 const favicon = require('serve-favicon');
 const cors = require('cors');
+const compression = require('compression');
 const { router } = require('./src/router');
 
 const port = process.env.PORT || 3300;
+
 const app = express();
+// compressing all responses
+app.use(compression());
 
 const corsOptions = {
   allowedHeaders: 'Content-Type,Authorization',
