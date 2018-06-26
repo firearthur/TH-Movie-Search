@@ -14,7 +14,7 @@ a {
 
 nav a:hover {
   color: white;
-  background-color: #383333
+  background-color: #888;
 }
 
 @media screen and (min-width: 768px){
@@ -25,6 +25,8 @@ nav a:hover {
 
   nav a {
     margin: 0 10px;
+    transition: color 1s linear;
+    transition: background-color 1s linear; 
   }
 } 
 
@@ -32,6 +34,6 @@ nav a:hover {
   padding: 20px 20px;
   background-color: #1f1d1d;
   color: #eee;
-  -webkit-transition: color 1s linear; /* Safari */
-  transition: color 1s linear;  
+  transition: color 1s linear;
+  transition: background-color 0.5s ease;  
 }
