@@ -1,8 +1,10 @@
-<div *ngIf="history && history.length; else noResults">
+<!-- incase you want to have a defualt view the else is there -->
+<!-- <div *ngIf="history && history.length; else noResults"> -->
+<div *ngIf="history && history.length">
   <ul>
     <li *ngFor="let term of history">
       <app-search-history-list-item [term]="term"></app-search-history-list-item>
     </li>
   </ul>
 </div>
-<ng-template #noResults>No search history results :(</ng-template>
+<!-- <ng-template #noResults>No search history results :(</ng-template> -->
